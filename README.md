@@ -12,11 +12,11 @@ _This document contains the main commands and settings to install/configure/use 
 
 ### `speedtest-cli`
 
-O `speedtest-cli` é uma ferramenta de linha de comando amplamente utilizada para medir a velocidade da conexão à internet de um sistema Linux. Baseado no serviço `Speedtest.net`, ele permite aos usuários verificar a largura de banda de download e upload de sua conexão, bem como a latência da rede, tudo a partir da linha de comando. O `speedtest-cli` é uma opção conveniente para administradores de rede, usuários avançados e aqueles que desejam monitorar a qualidade de sua conexão à internet de forma rápida e direta, sem a necessidade de uma interface gráfica. Ele fornece informações valiosas para avaliar o desempenho da rede e solucionar problemas de conectividade.
+O `speedtest-cli` é uma ferramenta de linha de comando amplamente utilizada para medir a velocidade da conexão à internet de um sistema `Linux`. Baseado no serviço `Speedtest.net`, ele permite aos usuários verificar a largura de banda de download e upload de sua conexão, bem como a latência da rede, tudo a partir da linha de comando. O `speedtest-cli` é uma opção conveniente para administradores de rede, usuários avançados e aqueles que desejam monitorar a qualidade de sua conexão à internet de forma rápida e direta, sem a necessidade de uma interface gráfica. Ele fornece informações valiosas para avaliar o desempenho da rede e solucionar problemas de conectividade.
 
 ## 1. Configurar/Instalar/Usar o `speedtest-cli` no `Linux Ubuntu` [1]
 
-Para configurar/instalar/usar o `speedtest-cli` no Ubuntu, você pode usar o gerenciador de pacotes apt. Siga os passos abaixo:
+Para configurar/instalar/usar o `speedtest-cli` no `Linux Ubuntu`, você pode usar o gerenciador de pacotes apt. Siga os passos abaixo:
 
 1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`
 
@@ -52,7 +52,7 @@ Pronto! Agora você deve ter o `speedtest-cli` instalado e funcionando em seu si
 
 ## 1.1 Código completo para configurar/instalar/usar
 
-Para configurar/instalar/usar o `speedtest` no `Linux Ubuntu` sem precisar digitar linha por linha, você pode seguir estas etapas:
+Para configurar/instalar/usar o `speedtest-cli` no `Linux Ubuntu` sem precisar digitar linha por linha, você pode seguir estas etapas:
 
 1. Abra o `Terminal Emulator. Você pode fazer isso pressionando: `Ctrl + Alt + T`
 
