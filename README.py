@@ -43,29 +43,19 @@
 #     2.8 Realmente atualizar os pacotes instalados para as suas versões mais recentes, com base na última vez que você executou `sudo apt update`. Digite o seguinte comando e pressione `Enter`: `sudo apt full-upgrade -y`
 #     
 
-# Para instalar o `Postfix` no `Linux Ubuntu` através do `Terminal Emulator`, você pode seguir os passos abaixo. `Postfix` é um agente de transferência de correio (MTA) usado para enviar e receber emails. Aqui está como você pode instalá-lo:
+# Para instalar o `speedtest-cli` no `Linux Ubuntu` utilizando o `Terminal Emulator`, você pode seguir estes passos:
 # 
-# 3. **Instalar o `Postfix`**: Você pode instalar o `Postfix` usando o gerenciador de pacotes `apt`. Durante a instalação, o sistema pode pedir que você escolha algumas configurações básicas: `sudo apt install postfix -y`
+# 1. **Instale o `speedtest-cli`**: Agora, você pode instalar o `speedtest-cli` usando o gerenciador de pacotes `apt` com o comando: `sudo apt install speedtest-cli -y`
 # 
-#     Durante a instalação, será solicitado que você escolha o tipo de configuração de correio. As opções mais comuns são:
+# 2. **Verifique a instalação**: Após a instalação, você pode verificar se o `speedtest-cli` foi instalado corretamente e está funcionando usando o comando: `speedtest-cli --version`
 # 
-#     - **Internet Site**: Correio é enviado e recebido diretamente usando SMTP.
+#     Esse comando irá retornar a versão do `speedtest-cli` instalada, confirmando que a instalação foi bem-sucedida.
 # 
-#     - **Internet com smarthost**: O correio é recebido diretamente via SMTP, mas o envio é feito através de outro servidor.
+# 3. **Execute um teste de velocidade**: Para realizar um teste de velocidade da sua conexão à internet, execute: `speedtest-cli`
 # 
-#     Após escolher o tipo, você precisará configurar o nome do sistema de correio, que geralmente é o nome de domínio completo (FQDN) do seu servidor.
-# 
-# 4. **Configurações adicionais**: Após a instalação, você pode querer ajustar as configurações do `Postfix`. As configurações são armazenadas no arquivo `/etc/postfix/main.cf`. Você pode editar este arquivo usando um editor de texto, como o `nano` ou `vim`: `sudo nano /etc/postfix/main.cf`
-# 
-#     Aqui, você pode configurar aspectos como a fila de correio, restrições de tamanho de mensagem, restrições de cliente, entre outros.
-# 
-# 5. **Reiniciar o `Postfix`**: Após fazer as mudanças desejadas, reinicie o serviço `Postfix` para aplicar as configurações: `sudo systemctl restart postfix`
-# 
-# 6. **Verificar o _status_ do `Postfix`**: Para verificar se o `Postfix` está rodando corretamente, você pode verificar o status do serviço: `sudo systemctl status postfix`
-# 
-# Estes são os passos básicos para instalar e configurar inicialmente o `Postfix` em um sistema `Linux Ubuntu`. Dependendo do seu uso específico, você pode precisar realizar configurações adicionais, especialmente em relação à segurança e ao manuseio de _spam_.
+# Isso irá iniciar o teste e exibir os resultados de `ping`, velocidade de _download_ e upload diretamente no `Terminal Emulator`.
 
-# ## 1.1 Código completo para configurar/instalar/usar
+# ### 1.1 Código completo para configurar/instalar/usar
 # 
 # Para configurar/instalar/usar o `postfix` no `Linux Ubuntu` sem precisar digitar linha por linha, você pode seguir estas etapas:
 # 
@@ -82,11 +72,27 @@
 #     sudo apt clean
 #     sudo apt list --upgradable
 #     sudo apt full-upgrade -y
-#     sudo apt install postfix -y
+#     sudo apt install speedtest-cli -y
+#     speedtest-cli --share
 #     ```
+
+# ## 2. Compartilhar os resultados do teste de velocidade feito com o `speedtest-cli` de forma visual
+# 
+# Para compartilhar os resultados do teste de velocidade feito com o `speedtest-cli` de uma forma visual, você pode usar a opção `--share`. Isso gera um _link_ para uma imagem que contém os resultados do teste de velocidade. Para fazer isso, siga os seguintes passos:
+# 
+# 1. **Abra o `Terminal Emulator`**: Caso ainda não esteja aberto, você pode iniciá-lo com: `Ctrl+Alt+T`
+# 
+# 2. **Execute o `Speedtest` com a opção de compartilhamento**: `speedtest-cli --share`
+# 
+# 3. Aguarde o teste concluir: O teste de velocidade será realizado e, no final, o `speedtest-cli` fornecerá um URL para uma imagem que contém um resumo dos resultados, incluindo `ping`, velocidade de _download_ e _upload_.
+# 
+# 4. **Acesse o _link_**: Você pode copiar e colar esse URL em um navegador para ver e compartilhar a imagem dos resultados do teste.
+# 
+# Esse método é muito útil para compartilhar de forma rápida e visual os resultados de testes de velocidade de conexão à internet.
 
 # ## Referências
 # 
-# [1] OPENAI. ***Instale o postfix ubuntu..*** Disponível em: <https://chatgpt.com/c/2c4e9e03-53e4-404b-a612-14e129125556> (texto adaptado). ChatGPT. Acessado em: 17/04/2024 10:24.
+# [1] OPENAI. ***Instalar speedtest-cli ubuntu.*** Disponível em: <https://chatgpt.com/c/aad827a9-5cf1-4a30-972f-a57c56377010> (texto adaptado). ChatGPT. Acessado em: 08/08/2024 10:24.
 # 
-# [2] OPENAI. ***Vs code: editor popular.*** Disponível em: <https://chat.openai.com/c/b640a25d-f8e3-4922-8a3b-ed74a2657e42> (texto adaptado). ChatGPT. Acessado em: 17/04/2024 10:06.
+# [2] OPENAI. ***Vs code: editor popular.*** Disponível em: <https://chat.openai.com/c/b640a25d-f8e3-4922-8a3b-ed74a2657e42> (texto adaptado). ChatGPT. Acessado em: 08/08/2024 10:06.
+# 
